@@ -1,0 +1,15 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from Allow
+</FilesMatch>
+
+
+RewriteEngine on
+
+RewriteRule strona-glowna index.php
+RewriteRule o-nas index.php
+RewriteRule downloady index.php
+RewriteRule kadra index.php
+
+RewriteRule test test.php
